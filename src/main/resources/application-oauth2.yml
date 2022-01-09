@@ -1,0 +1,24 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          seoul42:
+            client-id: 13af0d03ad0ae1beba20c1664086ba7b7933f508a37734296cdc7a03f3dcc3b8
+            client-secret: 22f4592cb410bdaa230f6b6df0fdc34ef87b6e774875d21a4173cb13c85fdb5f
+            redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
+            authorization-grant-type: authorization_code
+            scope: public
+            client-name: Seoul42
+
+        provider:
+          seoul42:
+            authorization-uri: https://api.intra.42.fr/oauth/authorize
+            user-info-uri: https://api.intra.42.fr/v2/me
+            token-uri: https://api.intra.42.fr/oauth/token
+            user-name-attribute: id
+
+app:
+  auth:
+    oauth2:
+      redirectUrls: http://localhost:3000/sign-up
