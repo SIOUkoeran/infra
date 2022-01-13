@@ -1,6 +1,5 @@
 package com.example.infra42.entity.enums;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

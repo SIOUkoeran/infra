@@ -17,7 +17,6 @@ spring:
             user-info-uri: https://api.intra.42.fr/v2/me
             token-uri: https://api.intra.42.fr/oauth/token
             user-name-attribute: id
-
 app:
   auth:
     oauth2:
